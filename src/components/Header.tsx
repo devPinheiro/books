@@ -34,18 +34,18 @@ export const Header = ({ onGenreChange }: HeaderProps) => {
     }
   };
 
-  const scrollTabs = (direction: 'left' | 'right') => {
-    if (scrollContainerRef.current) {
-      const scrollAmount = 200;
-      const newScrollLeft = scrollContainerRef.current.scrollLeft + 
-        (direction === 'right' ? scrollAmount : -scrollAmount);
+  // const scrollTabs = (direction: 'left' | 'right') => {
+  //   if (scrollContainerRef.current) {
+  //     const scrollAmount = 200;
+  //     const newScrollLeft = scrollContainerRef.current.scrollLeft + 
+  //       (direction === 'right' ? scrollAmount : -scrollAmount);
       
-      scrollContainerRef.current.scrollTo({
-        left: newScrollLeft,
-        behavior: 'smooth'
-      });
-    }
-  };
+  //     scrollContainerRef.current.scrollTo({
+  //       left: newScrollLeft,
+  //       behavior: 'smooth'
+  //     });
+  //   }
+  // };
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-black/30 backdrop-blur-md border-b border-white/10">
