@@ -26,4 +26,4 @@ logs
 !.env.example
 .aider*
 .claude
-dist
+dist.claude 
